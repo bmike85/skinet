@@ -10,41 +10,39 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cb6c7a-ca28-46f7-96c3-e13fcc5574f5" name="Default Changelist" comment="Initial Version">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/dataSources/5ef7fd80-46f6-4bcb-8230-6aca10388445.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/dictionaries/micha.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/API.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Controllers/ProductsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Core/Entities/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/Migrations/StoreContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Skinet.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Entities/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Entities/ProductBrand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Entities/ProductType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Interfaces/IProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/Config/ProductConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/ProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/SeedData/brands.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/SeedData/products.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/SeedData/types.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Infrastructure/Data/StoreContextSeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/dataSources/5ef7fd80-46f6-4bcb-8230-6aca10388445.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/dataSources/5ef7fd80-46f6-4bcb-8230-6aca10388445.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Controllers/ProductsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Controllers/ProductsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Entities/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Entities/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/Migrations/StoreContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/Migrations/StoreContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +55,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/199D11C9-6FFC-4A68-B1DA-C2CA6FFA8B90/21/WebHostBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/API/Controllers/ProductsController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.Designer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Core/Entities/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Infrastructure/Data/Migrations/StoreContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -76,14 +71,22 @@
         <option value="$PROJECT_DIR$/API/UML/Classes.puml" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/Migrations/20201006163430_InitialCreate.Designer.cs" />
-        <option value="$PROJECT_DIR$/API/Startup.cs" />
-        <option value="$PROJECT_DIR$/API/Controllers/ProductsController.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/Migrations/StoreContextModelSnapshot.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" />
-        <option value="$PROJECT_DIR$/Core/Entities/Product.cs" />
         <option value="$PROJECT_DIR$/API/API.csproj" />
-        <option value="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/API/Startup.cs" />
+        <option value="$PROJECT_DIR$/Core/Entities/BaseEntity.cs" />
+        <option value="$PROJECT_DIR$/Core/Entities/Product.cs" />
+        <option value="$PROJECT_DIR$/Core/Entities/ProductBrand.cs" />
+        <option value="$PROJECT_DIR$/Core/Entities/ProductType.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/Config/ProductConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/StoreContextSeed.cs" />
+        <option value="$PROJECT_DIR$/API/Program.cs" />
+        <option value="$PROJECT_DIR$/Core/Interfaces/IProductRepository.cs" />
+        <option value="$PROJECT_DIR$/API/Controllers/ProductsController.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/ProductRepository.cs" />
       </list>
     </option>
   </component>
@@ -145,8 +148,16 @@
       <workItem from="1602048931932" duration="681000" />
       <workItem from="1602049651981" duration="4160000" />
       <workItem from="1602064609603" duration="1053000" />
-      <workItem from="1602065831264" duration="1067000" />
+      <workItem from="1602065831264" duration="9263000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Version">
+      <created>1602067295659</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602067295659</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +170,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -271,9 +294,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="705" y="222" key="PlantUMLSettings/62.0.1858.1080@62.0.1858.1080" timestamp="1602050112594" />
-    <state x="701" y="241" key="RiderGenerateDialog" timestamp="1602000617319">
+    <state x="701" y="241" key="RiderGenerateDialog" timestamp="1602077187151">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
+    <state x="701" y="241" key="RiderGenerateDialog/62.0.1858.1080/1920.0.2560.1400@62.0.1858.1080" timestamp="1602077187151" />
     <state x="701" y="241" key="RiderGenerateDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1602000617319" />
     <state x="492" y="185" key="SettingsEditor" timestamp="1602065658864">
       <screen x="62" y="0" width="1858" height="1080" />
