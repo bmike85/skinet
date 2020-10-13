@@ -20,20 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cb6c7a-ca28-46f7-96c3-e13fcc5574f5" name="Default Changelist" comment="End of Section 3">
-      <change afterPath="$PROJECT_DIR$/API/Controllers/BaseApiController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Controllers/BuggyController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Controllers/ErrorController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Errors/ApiException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Errors/ApiResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Errors/ApiValidationErrorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Extensions/SwaggerServiceExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Middleware/ExceptionMiddleware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/API/Helpers/Pagination.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Specifications/ProductSpecParams.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Specifications/ProductWithFiltersForCountSpecification.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Skinet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/API/API.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/Controllers/ProductsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Controllers/ProductsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Interfaces/IGenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Interfaces/IGenericRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Specifications/BaseSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Specifications/BaseSpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Specifications/ISpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Specifications/ISpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Specifications/ProductsWithTypesAndBrandsSpecification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Specifications/ProductsWithTypesAndBrandsSpecification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/GenericRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/SpecificationEvaluator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/SpecificationEvaluator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,17 +69,10 @@
         <option value="$PROJECT_DIR$/Core/Entities/ProductBrand.cs" />
         <option value="$PROJECT_DIR$/Core/Entities/ProductType.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/Config/ProductConfiguration.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/StoreContextSeed.cs" />
         <option value="$PROJECT_DIR$/API/Program.cs" />
         <option value="$PROJECT_DIR$/Core/Interfaces/IProductRepository.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Data/ProductRepository.cs" />
-        <option value="$PROJECT_DIR$/Core/Specifications/ISpecification.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure/Data/SpecificationEvaluator.cs" />
-        <option value="$PROJECT_DIR$/Core/Interfaces/IGenericRepository.cs" />
-        <option value="$PROJECT_DIR$/Infrastructure/Data/GenericRepository.cs" />
-        <option value="$PROJECT_DIR$/Core/Specifications/BaseSpecification.cs" />
-        <option value="$PROJECT_DIR$/Core/Specifications/ProductsWithTypesAndBrandsSpecification.cs" />
         <option value="$PROJECT_DIR$/API/Dtos/ProductToReturnDto.cs" />
         <option value="$PROJECT_DIR$/API/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/API/Helpers/ProductUrlResolver.cs" />
@@ -92,10 +84,20 @@
         <option value="$PROJECT_DIR$/API/Middleware/ExceptionMiddleware.cs" />
         <option value="$PROJECT_DIR$/API/Errors/ApiValidationErrorResponse.cs" />
         <option value="$PROJECT_DIR$/API/Controllers/ErrorController.cs" />
-        <option value="$PROJECT_DIR$/API/Controllers/ProductsController.cs" />
         <option value="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" />
         <option value="$PROJECT_DIR$/API/Extensions/SwaggerServiceExtensions.cs" />
         <option value="$PROJECT_DIR$/API/Startup.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/StoreContext.cs" />
+        <option value="$PROJECT_DIR$/Core/Specifications/ISpecification.cs" />
+        <option value="$PROJECT_DIR$/Core/Specifications/BaseSpecification.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/SpecificationEvaluator.cs" />
+        <option value="$PROJECT_DIR$/Core/Interfaces/IGenericRepository.cs" />
+        <option value="$PROJECT_DIR$/Infrastructure/Data/GenericRepository.cs" />
+        <option value="$PROJECT_DIR$/API/Helpers/Pagination.cs" />
+        <option value="$PROJECT_DIR$/API/Controllers/ProductsController.cs" />
+        <option value="$PROJECT_DIR$/Core/Specifications/ProductSpecParams.cs" />
+        <option value="$PROJECT_DIR$/Core/Specifications/ProductsWithTypesAndBrandsSpecification.cs" />
+        <option value="$PROJECT_DIR$/Core/Specifications/ProductWithFiltersForCountSpecification.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +164,7 @@
       <workItem from="1602147576822" duration="7888000" />
       <workItem from="1602225871291" duration="2978000" />
       <workItem from="1602490953395" duration="4834000" />
-      <workItem from="1602577239363" duration="9957000" />
+      <workItem from="1602577239363" duration="16580000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Version">
       <created>1602067295659</created>
@@ -185,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602166440121</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="End of Section 5">
+      <created>1602595969498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602595969499</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +231,8 @@
     <MESSAGE value="Initial Version" />
     <MESSAGE value="End of Section 3" />
     <MESSAGE value="End of section 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="End of section 4" />
+    <MESSAGE value="End of Section 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="End of Section 5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="583" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602002487417">
@@ -346,20 +356,20 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="705" y="222" key="PlantUMLSettings/62.0.1858.1080@62.0.1858.1080" timestamp="1602050112594" />
-    <state x="701" y="241" key="RiderGenerateDialog" timestamp="1602585602355">
+    <state x="701" y="241" key="RiderGenerateDialog" timestamp="1602604134868">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="701" y="241" key="RiderGenerateDialog/62.0.1858.1080/1920.0.2560.1400@62.0.1858.1080" timestamp="1602585602355" />
+    <state x="701" y="241" key="RiderGenerateDialog/62.0.1858.1080/1920.0.2560.1400@62.0.1858.1080" timestamp="1602604134868" />
     <state x="701" y="241" key="RiderGenerateDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1602000617319" />
     <state x="492" y="185" key="SettingsEditor" timestamp="1602235524148">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="492" y="185" key="SettingsEditor/62.0.1858.1080/1920.0.2560.1400@62.0.1858.1080" timestamp="1602065658864" />
     <state x="492" y="185" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1602235524148" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602166448357">
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1602595973351">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.0.2560.1400@62.0.1858.1080" timestamp="1602166448357" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.0.2560.1400@62.0.1858.1080" timestamp="1602595973351" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1602163056257">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
